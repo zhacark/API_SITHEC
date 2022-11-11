@@ -64,7 +64,7 @@ namespace Services.Extensions
         }
         private static bool ValidaHumano(DTOHumano _valor)
         {
-            if (!_valor.Nombre.esCadenaVacia() && !_valor.Sexo.esCadenaVacia() && _valor.Edad.esEntero() && _valor.Altura.esFlotante())
+            if (!_valor.Nombre.esCadenaVacia() && !_valor.Sexo.esCadenaVacia() && _valor.Edad.esEntero() && _valor.Altura.esFlotante() && _valor.Peso.esFlotante())
                 return true;
             else
                 return false;
