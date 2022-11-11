@@ -8,7 +8,7 @@ A continuación se muestran los request para el correcto funcionamiento de la ap
 
 ### API tipo GET que retorne un arreglo de objetos de tipo "HUMANO", esta información sera mock
     Realizar petición GET  utilizando la url https://apihumano.azurewebsites.net/Home 
-    [GET Mock][get-mock]
+    [GET Mock](https://drive.google.com/file/d/14PB3xlf3bWzRTWp-L6hH4NIs3rOnlMiy/view?usp=share_link)
 ### API tipo POST que se envíen 3 argumentos para la realización de una operación matemática y retorne el resultado
     Realizar petición POST utilizando la url https://apihumano.azurewebsites.net/Home 
     [Request POST Operación][post-operacion]
@@ -34,7 +34,6 @@ A continuación se muestran los request para el correcto funcionamiento de la ap
     - El tipo humano debe de tener de atributos: Id, Nombre, Sexo, Edad, Altura y Peso
     - Lost tipos de operaciones erán básicas; suma, resta, multiplicación y división.
 
-[get-mock]: https://drive.google.com/file/d/14PB3xlf3bWzRTWp-L6hH4NIs3rOnlMiy/view?usp=share_link
 [post-operacion]: https://drive.google.com/file/d/1mCkGmwFcIHj-VETZ1Vt5Y49X6QhPg4xC/view?usp=share_link
 [get-operacion]: https://drive.google.com/file/d/1ny8eXHYxyfFxdUBcAeDtvNzCik_FQgjC/view?usp=share_link
 [get-all]: https://drive.google.com/file/d/1gJngX_IFUy2XS82rTSct_TamCtBUU7Jg/view?usp=share_link
