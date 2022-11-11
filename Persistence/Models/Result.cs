@@ -12,6 +12,7 @@ namespace Persistence.Models
         public int Estatus { get; set; }
         public string Mensaje { get; set; }
         public int RegistroId { get; set; }
+        public string Resultado { get; set; }
 
     }
 

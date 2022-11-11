@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using Persistence.ModelDB;
 using Persistence.UnitOfWork;
 
 using Services;
+using Services.Utilities;
 using Services.Extensions;
 
 namespace ExamenSITHEC.Controllers
@@ -50,14 +52,14 @@ namespace ExamenSITHEC.Controllers
         #endregion
         #region Operaciones
         [HttpPost]
-        public float Post(string _operacion, string _num1, string _num2)
+        public Result Post(string _operacion, string _num1, string _num2)
         {
             if (!_num1.esFlotanteString())
-                return -1;
+                return new Result() {  Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.PARAM_ERR };
             if (!_num2.esFlotanteString())
-                return -1;
+                return new Result() { Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.PARAM_ERR };
             if (!_operacion.esOperacion())
-                return -1;
+                return new Result() { Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.PARAM_ERR };
 
 
             float num1 = float.Parse(_num1), num2 = float.Parse(_num2);
@@ -65,29 +67,29 @@ namespace ExamenSITHEC.Controllers
             switch (_operacion)
             {
                 case "suma":
-                    return num1 + num2;
+                    return new Result() { Estatus = (int)HttpStatusCode.OK, Mensaje = Constants.REQ_OK, Resultado = (num1 + num2).ToString() };
                 case "resta":
-                    return num1 - num2;
+                    return new Result() { Estatus = (int)HttpStatusCode.OK, Mensaje = Constants.REQ_OK, Resultado = (num1 - num2).ToString() };
                 case "multiplicacion":
-                    return num1 * num2;
+                    return new Result() { Estatus = (int)HttpStatusCode.OK, Mensaje = Constants.REQ_OK, Resultado = (num1 * num2).ToString() };
                 case "division":
                     if (num2 <= 0)
-                        return -1;
-                    return num1 / num2;
+                        return new Result() { Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.ZERO };
+                    return new Result() { Estatus = (int)HttpStatusCode.OK, Mensaje = Constants.REQ_OK, Resultado = (num1 / num2).ToString() };
                 default:
-                    return -1;
+                    return new Result() { Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.OPERATION_NOT_FOUND };
             }
         }
 
         [HttpGet("GetHeader")]
-        public float Get([FromHeader] string _operacion, [FromHeader] string _num1, [FromHeader] string _num2)
+        public Result Get([FromHeader] string _operacion, [FromHeader] string _num1, [FromHeader] string _num2)
         {
             if (!_num1.esFlotanteString())
-                return -1;
+                return new Result() { Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.PARAM_ERR };
             if (!_num2.esFlotanteString())
-                return -1;
+                return new Result() { Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.PARAM_ERR };
             if (!_operacion.esOperacion())
-                return -1;
+                return new Result() { Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.PARAM_ERR };
 
 
             float num1 = float.Parse(_num1), num2 = float.Parse(_num2);
@@ -95,17 +97,17 @@ namespace ExamenSITHEC.Controllers
             switch (_operacion)
             {
                 case "suma":
-                    return num1 + num2;
+                    return new Result() { Estatus = (int)HttpStatusCode.OK, Mensaje = Constants.REQ_OK, Resultado = (num1 + num2).ToString() };
                 case "resta":
-                    return num1 - num2;
+                    return new Result() { Estatus = (int)HttpStatusCode.OK, Mensaje = Constants.REQ_OK, Resultado = (num1 - num2).ToString() };
                 case "multiplicacion":
-                    return num1 * num2;
+                    return new Result() { Estatus = (int)HttpStatusCode.OK, Mensaje = Constants.REQ_OK, Resultado = (num1 * num2).ToString() };
                 case "division":
                     if (num2 <= 0)
-                        return -1;
-                    return num1 / num2;
+                        return new Result() { Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.ZERO };
+                    return new Result() { Estatus = (int)HttpStatusCode.OK, Mensaje = Constants.REQ_OK, Resultado = (num1 / num2).ToString() };
                 default:
-                    return -1;
+                    return new Result() { Estatus = (int)HttpStatusCode.BadRequest, Mensaje = Constants.OPERATION_NOT_FOUND };
             }
         }
         #endregion
