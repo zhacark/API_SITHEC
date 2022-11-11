@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SITHEC", "SITHEC\SITHEC.csproj", "{1168ACA6-D073-4ADF-99E7-119031846587}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{39CE8D3D-F911-4E46-9D71-909315BCD723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{7D8C43B0-8335-493A-987C-2EDC39420CC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1168ACA6-D073-4ADF-99E7-119031846587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1168ACA6-D073-4ADF-99E7-119031846587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1168ACA6-D073-4ADF-99E7-119031846587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1168ACA6-D073-4ADF-99E7-119031846587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39CE8D3D-F911-4E46-9D71-909315BCD723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CE8D3D-F911-4E46-9D71-909315BCD723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CE8D3D-F911-4E46-9D71-909315BCD723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CE8D3D-F911-4E46-9D71-909315BCD723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8C43B0-8335-493A-987C-2EDC39420CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8C43B0-8335-493A-987C-2EDC39420CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8C43B0-8335-493A-987C-2EDC39420CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8C43B0-8335-493A-987C-2EDC39420CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DA0C52D-98B6-4CF9-8C3E-AF837FD5134D}
+	EndGlobalSection
+EndGlobal

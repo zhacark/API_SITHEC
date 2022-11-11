@@ -1,0 +1,16 @@
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\bin\Debug\netcoreapp3.1\win81-x64\Service.deps.json
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\bin\Debug\netcoreapp3.1\win81-x64\Service.runtimeconfig.json
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\bin\Debug\netcoreapp3.1\win81-x64\Service.runtimeconfig.dev.json
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\bin\Debug\netcoreapp3.1\win81-x64\Service.dll
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\bin\Debug\netcoreapp3.1\win81-x64\Service.pdb
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\bin\Debug\netcoreapp3.1\win81-x64\Persistence.dll
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\bin\Debug\netcoreapp3.1\win81-x64\Persistence.pdb
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\obj\Debug\netcoreapp3.1\win81-x64\Service.csproj.AssemblyReference.cache
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\obj\Debug\netcoreapp3.1\win81-x64\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\obj\Debug\netcoreapp3.1\win81-x64\Service.AssemblyInfoInputs.cache
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\obj\Debug\netcoreapp3.1\win81-x64\Service.AssemblyInfo.cs
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\obj\Debug\netcoreapp3.1\win81-x64\Service.csproj.CoreCompileInputs.cache
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\obj\Debug\netcoreapp3.1\win81-x64\Service.csproj.CopyComplete
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\obj\Debug\netcoreapp3.1\win81-x64\Service.dll
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\obj\Debug\netcoreapp3.1\win81-x64\Service.pdb
+C:\Users\Romario Ramirez\source\repos\SITHEC\Service\obj\Debug\netcoreapp3.1\win81-x64\Service.genruntimeconfig.cache
