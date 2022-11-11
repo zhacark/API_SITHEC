@@ -8,7 +8,7 @@ A continuación se muestran los request para el correcto funcionamiento de la ap
 
 ### API tipo GET que retorne un arreglo de objetos de tipo "HUMANO", esta información sera mock
     Realizar petición GET  utilizando la url https://apihumano.azurewebsites.net/Home 
-    [Request GET Mock][get-mock]
+    [GET Mock][get-mock]
 ### API tipo POST que se envíen 3 argumentos para la realización de una operación matemática y retorne el resultado
     Realizar petición POST utilizando la url https://apihumano.azurewebsites.net/Home 
     [Request POST Operación][post-operacion]
