@@ -1,11 +1,11 @@
-/Persistence/bin
-/Persistence/obj
+Persistence/bin/
+Persistence/obj/
 
-/Service/bin
-/Service/obj
+Service/bin/
+Service/obj/
 
-/SITHEC/bin
-/SITHEC/obj
+SITHEC/bin/
+SITHEC/obj/
 
-.vs
-.vscode
+.vs/
+.vscode/
